@@ -49,10 +49,10 @@ int main()
                 validChoice = false;
                 while (!validChoice)
                 {
-                    std::cout << "1. Calculate Area" << std::endl;
+                    std::cout << "1. Calculate Area (& save)" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
                     std::cout << "3. Back to Main Menu" << std::endl;
-                    std::cout << "Choice(cm): ";
+                    std::cout << "Choice: ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -71,6 +71,8 @@ int main()
                     case 1:
                     {
                         std::cout << "Area: " << shape->calculateArea() << "^2 cm" << std::endl;
+                        //Save Area
+                        Shapes::totalArea += shape->calculateArea();
                         break;
                     }
                     case 2:
@@ -100,10 +102,10 @@ int main()
                 validChoice = false;
                 while (!validChoice)
                 {
-                    std::cout << "1. Calculate Area" << std::endl;
+                    std::cout << "1. Calculate Area (& save)" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
                     std::cout << "3. Back to Main Menu" << std::endl;
-                    std::cout << "Choice(cm): ";
+                    std::cout << "Choice: ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -120,7 +122,9 @@ int main()
                     {
                         case 1:
                         {
-                            std::cout << "Area " << shape->calculateArea() << std::endl;
+                            std::cout << "Area: " << shape->calculateArea() << "^2 cm" << std::endl;
+                            //Save Area
+                            Shapes::totalArea += shape->calculateArea();
                             break;
                         }
                         case 2:
@@ -150,10 +154,10 @@ int main()
                 validChoice = false;
                 while (!validChoice)
                 {
-                    std::cout << "1. Calculate Area" << std::endl;
+                    std::cout << "1. Calculate Area (& save)" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
                     std::cout << "3. Back to Main Menu" << std::endl;
-                    std::cout << "Choice(cm): ";
+                    std::cout << "Choice: ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -170,7 +174,9 @@ int main()
                     {
                         case 1:
                         {
-                            std::cout << "Area " << shape->calculateArea() << std::endl;
+                            std::cout << "Area: " << shape->calculateArea() << "^2 cm" << std::endl;
+                            //Save Area
+                            Shapes::totalArea += shape->calculateArea();
                             break;
                         }
                         case 2:
@@ -200,10 +206,10 @@ int main()
                 validChoice = false;
                 while (!validChoice)
                 {
-                    std::cout << "1. Calculate Area" << std::endl;
+                    std::cout << "1. Calculate Area (& save)" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
                     std::cout << "3. Back to Main Menu" << std::endl;
-                    std::cout << "Choice(cm): ";
+                    std::cout << "Choice: ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -220,7 +226,9 @@ int main()
                     {
                         case 1:
                         {
-                            std::cout << "Area " << shape->calculateArea() << std::endl;
+                            std::cout << "Area: " << shape->calculateArea() << "^2 cm" << std::endl;
+                            //Save Area
+                            Shapes::totalArea += shape->calculateArea();
                             break;
                         }
                         case 2:
@@ -240,5 +248,8 @@ int main()
         }
 
     } while (choice != 5);
+
+    //Total Area
+    std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
 }

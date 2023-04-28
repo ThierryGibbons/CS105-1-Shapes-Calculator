@@ -15,6 +15,7 @@ public:
     virtual double calculateArea() = 0;
     virtual double calculatePerimeter() = 0;
     virtual ~Shapes() {}
+    static double totalArea;
 };
 
 /*

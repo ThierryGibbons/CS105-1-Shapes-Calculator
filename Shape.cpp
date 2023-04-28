@@ -3,6 +3,7 @@
 #include <cmath>
 
 Shapes::Shapes() : base(0), height(0), area(0), perimeter(0) {}
+double Shapes::totalArea = 0;
 
 //Get data function
 void Shapes::getData(char shape)
@@ -11,25 +12,25 @@ void Shapes::getData(char shape)
     {
         case 's': // Square
         {
-            std::cout << "Enter side: ";
+            std::cout << "Enter side(cm): ";
             std::cin >> base;
             break;
         }
         case 'r': // Rectangle
         {
-            std::cout << "Enter length and breadth: ";
+            std::cout << "Enter length and breadth(cm): ";
             std::cin >> base >> height;
             break;
         }
         case 't': // Triangle
         {
-            std::cout << "Enter base and height: ";
+            std::cout << "Enter base and height(cm): ";
             std::cin >> base >> height;
             break;
         }
         case 'c': // Circle
         {
-            std::cout << "Enter radius: ";
+            std::cout << "Enter radius(cm): ";
             std::cin >> base;
             break;
         }
