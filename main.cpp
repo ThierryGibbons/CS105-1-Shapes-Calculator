@@ -52,7 +52,8 @@ int main()
                 {
                     std::cout << "1. Calculate Area" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
-                    std::cout << "Back to Main Menu" << std::endl;
+                    std::cout << "3. Back to Main Menu" << std::endl;
+                    std::cout << "Choice: ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -63,9 +64,8 @@ int main()
                     {
                         std::cout << "Invalid choice. Please try again." << std::endl;
                     }
-
                 }
-
+                delete shape;
                 break;
             }
             case 2: // Rectangle
@@ -79,10 +79,25 @@ int main()
 
                 //TODO: Display Rectangle
 
-                std::cout << "1. Calculate Area" << std::endl;
-                std::cout << "2. Calculate Perimeter" << std::endl;
-                std::cout << "Back to Main Menu" << std::endl;
+                validChoice = false;
+                while (!validChoice)
+                {
+                    std::cout << "1. Calculate Area" << std::endl;
+                    std::cout << "2. Calculate Perimeter" << std::endl;
+                    std::cout << "3. Back to Main Menu" << std::endl;
+                    std::cout << "Choice: ";
+                    std::cin >> choice;
 
+                    if (choice >= 1 && choice <= 3)
+                    {
+                        validChoice = true;
+                    }
+                    else
+                    {
+                        std::cout << "Invalid choice. Please try again." << std::endl;
+                    }
+                }
+                delete shape;
                 break;
             }
             case 3: // Triangle
@@ -96,10 +111,25 @@ int main()
 
                 //TODO: Display Triangle
 
-                std::cout << "1. Calculate Area" << std::endl;
-                std::cout << "2. Calculate Perimeter" << std::endl;
-                std::cout << "Back to Main Menu" << std::endl;
+                validChoice = false;
+                while (!validChoice)
+                {
+                    std::cout << "1. Calculate Area" << std::endl;
+                    std::cout << "2. Calculate Perimeter" << std::endl;
+                    std::cout << "3. Back to Main Menu" << std::endl;
+                    std::cout << "Choice: ";
+                    std::cin >> choice;
 
+                    if (choice >= 1 && choice <= 3)
+                    {
+                        validChoice = true;
+                    }
+                    else
+                    {
+                        std::cout << "Invalid choice. Please try again." << std::endl;
+                    }
+                }
+                delete shape;
                 break;
             }
             case 4: // Circle
@@ -113,10 +143,25 @@ int main()
 
                 //TODO: Display Circle
 
-                std::cout << "1. Calculate Area" << std::endl;
-                std::cout << "2. Calculate Perimeter" << std::endl;
-                std::cout << "Back to Main Menu" << std::endl;
+                validChoice = false;
+                while (!validChoice)
+                {
+                    std::cout << "1. Calculate Area" << std::endl;
+                    std::cout << "2. Calculate Perimeter" << std::endl;
+                    std::cout << "3. Back to Main Menu" << std::endl;
+                    std::cout << "Choice: ";
+                    std::cin >> choice;
 
+                    if (choice >= 1 && choice <= 3)
+                    {
+                        validChoice = true;
+                    }
+                    else
+                    {
+                        std::cout << "Invalid choice. Please try again." << std::endl;
+                    }
+                }
+                delete shape;
                 break;
             }
         }

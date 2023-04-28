@@ -12,10 +12,11 @@ protected:
 public:
     Shapes();
     void getData(char shape);
-    virtual double calculateArea() {}
-    virtual double calculatePerimeter() {}
-    void giveArea() {}
-    void givePerimeter() {}
+    virtual double calculateArea() = 0;
+    virtual double calculatePerimeter() = 0;
+    virtual ~Shapes() {}
+    // void giveArea() {}
+    // void givePerimeter() {}
 };
 
 /*
