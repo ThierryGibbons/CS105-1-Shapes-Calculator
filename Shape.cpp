@@ -36,15 +36,6 @@ void Shapes::getData(char shape)
     }
 }
 
-// void Shapes::giveArea()
-// {
-//     std::cout << "Area: " << area << std::endl;
-// }
-// void Shapes::givePerimeter()
-// {
-//     std::cout << "Perimeter: " << perimeter << std::endl;
-// }
-
 /*
 Child Classes
 */
