@@ -39,7 +39,6 @@ int main()
             case 1: // Square
             {
                 shape = new Square();
-                shape->getData('s');
 
                 std::cout << "********************" << std::endl;
                 std::cout << "Square Calculator" << std::endl;
@@ -58,6 +57,7 @@ int main()
 
                     if (choice >= 1 && choice <= 3)
                     {
+                        shape->getData('s');
                         validChoice = true;
                     }
                     else
@@ -65,13 +65,31 @@ int main()
                         std::cout << "Invalid choice. Please try again." << std::endl;
                     }
                 }
+
+                switch (choice)
+                {
+                    case 1:
+                    {
+                        std::cout << "Area: " << shape->calculateArea() << std::endl;
+                        break;
+                    }
+                    case 2:
+                    {
+                        std::cout << "Perimeter: " << shape->calculatePerimeter() << std::endl;
+                        break;
+                    }
+                    case 3:
+                    {
+                        break;
+                    }
+                }
+
                 delete shape;
                 break;
             }
             case 2: // Rectangle
             {
                 shape = new Rectangle();
-                shape->getData('r');
 
                 std::cout << "********************" << std::endl;
                 std::cout << "Rectangle Calculator" << std::endl;
@@ -90,11 +108,30 @@ int main()
 
                     if (choice >= 1 && choice <= 3)
                     {
+                        shape->getData('r');
                         validChoice = true;
                     }
                     else
                     {
                         std::cout << "Invalid choice. Please try again." << std::endl;
+                    }
+
+                    switch (choice)
+                    {
+                        case 1:
+                        {
+                            std::cout << "Area " << shape->calculateArea() << std::endl;
+                            break;
+                        }
+                        case 2:
+                        {
+                            std::cout << "Perimeter: " << shape->calculatePerimeter() << std::endl;
+                            break;
+                        }
+                        case 3:
+                        {
+                            break;
+                        }
                     }
                 }
                 delete shape;
@@ -103,7 +140,6 @@ int main()
             case 3: // Triangle
             {
                 shape = new Triangle();
-                shape->getData('t');
 
                 std::cout << "********************" << std::endl;
                 std::cout << "Triangle Calculator" << std::endl;
@@ -122,11 +158,30 @@ int main()
 
                     if (choice >= 1 && choice <= 3)
                     {
+                        shape->getData('t');
                         validChoice = true;
                     }
                     else
                     {
                         std::cout << "Invalid choice. Please try again." << std::endl;
+                    }
+
+                    switch (choice)
+                    {
+                        case 1:
+                        {
+                            std::cout << "Area " << shape->calculateArea() << std::endl;
+                            break;
+                        }
+                        case 2:
+                        {
+                            std::cout << "Perimeter: " << shape->calculatePerimeter() << std::endl;
+                            break;
+                        }
+                        case 3:
+                        {
+                            break;
+                        }
                     }
                 }
                 delete shape;
@@ -135,7 +190,6 @@ int main()
             case 4: // Circle
             {
                 shape = new Circle();
-                shape->getData('c');
 
                 std::cout << "********************" << std::endl;
                 std::cout << "Circle Calculator" << std::endl;
@@ -154,11 +208,30 @@ int main()
 
                     if (choice >= 1 && choice <= 3)
                     {
+                        shape->getData('c');
                         validChoice = true;
                     }
                     else
                     {
                         std::cout << "Invalid choice. Please try again." << std::endl;
+                    }
+
+                    switch (choice)
+                    {
+                        case 1:
+                        {
+                            std::cout << "Area " << shape->calculateArea() << std::endl;
+                            break;
+                        }
+                        case 2:
+                        {
+                            std::cout << "Perimeter: " << shape->calculatePerimeter() << std::endl;
+                            break;
+                        }
+                        case 3:
+                        {
+                            break;
+                        }
                     }
                 }
                 delete shape;
