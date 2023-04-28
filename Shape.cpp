@@ -36,8 +36,8 @@ void Shapes::getData(char shape)
     }
 }
 
-void Shapes::calculateArea() {}
-void Shapes::calculatePerimeter() {}
+double Shapes::calculateArea() {}
+double Shapes::calculatePerimeter() {}
 
 void Shapes::giveArea()
 {
@@ -51,42 +51,42 @@ void Shapes::givePerimeter()
 /*
 Child Classes
 */
-void Square::calculateArea()
+double Square::calculateArea()
 {
     area = base * base;
 };
 
-void Square::calculatePerimeter()
+double Square::calculatePerimeter()
 {
     perimeter = 4 * base;
 };
 
-void Rectangle::calculateArea()
+double Rectangle::calculateArea()
 {
     area = base * height;
 };
 
-void Rectangle::calculatePerimeter()
+double Rectangle::calculatePerimeter()
 {
     perimeter = 2 * (base + height);
 };
 
-void Triangle::calculateArea()
+double Triangle::calculateArea()
 {
     area = 0.5 * base * height;
 };
 
-void Triangle::calculatePerimeter()
+double Triangle::calculatePerimeter()
 {
     perimeter = base + height + sqrt(base * base + height * height);
 };
 
-void Circle::calculateArea()
+double Circle::calculateArea()
 {
     area = 3.14 * base * base;
 };
 
-void Circle::calculatePerimeter()
+double Circle::calculatePerimeter()
 {
     perimeter = 2 * 3.14 * base;
 };
