@@ -52,7 +52,7 @@ int main()
                     std::cout << "1. Calculate Area" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
                     std::cout << "3. Back to Main Menu" << std::endl;
-                    std::cout << "Choice: ";
+                    std::cout << "Choice(cm): ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -70,12 +70,12 @@ int main()
                 {
                     case 1:
                     {
-                        std::cout << "Area: " << shape->calculateArea() << std::endl;
+                        std::cout << "Area: " << shape->calculateArea() << "^2 cm" << std::endl;
                         break;
                     }
                     case 2:
                     {
-                        std::cout << "Perimeter: " << shape->calculatePerimeter() << std::endl;
+                        std::cout << "Perimeter: " << shape->calculatePerimeter() << " cm" << std::endl;
                         break;
                     }
                     case 3:
@@ -103,7 +103,7 @@ int main()
                     std::cout << "1. Calculate Area" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
                     std::cout << "3. Back to Main Menu" << std::endl;
-                    std::cout << "Choice: ";
+                    std::cout << "Choice(cm): ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -125,7 +125,7 @@ int main()
                         }
                         case 2:
                         {
-                            std::cout << "Perimeter: " << shape->calculatePerimeter() << std::endl;
+                            std::cout << "Perimeter: " << shape->calculatePerimeter() << " cm" << std::endl;
                             break;
                         }
                         case 3:
@@ -153,7 +153,7 @@ int main()
                     std::cout << "1. Calculate Area" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
                     std::cout << "3. Back to Main Menu" << std::endl;
-                    std::cout << "Choice: ";
+                    std::cout << "Choice(cm): ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -175,7 +175,7 @@ int main()
                         }
                         case 2:
                         {
-                            std::cout << "Perimeter: " << shape->calculatePerimeter() << std::endl;
+                            std::cout << "Perimeter: " << shape->calculatePerimeter() << " cm" << std::endl;
                             break;
                         }
                         case 3:
@@ -203,7 +203,7 @@ int main()
                     std::cout << "1. Calculate Area" << std::endl;
                     std::cout << "2. Calculate Perimeter" << std::endl;
                     std::cout << "3. Back to Main Menu" << std::endl;
-                    std::cout << "Choice: ";
+                    std::cout << "Choice(cm): ";
                     std::cin >> choice;
 
                     if (choice >= 1 && choice <= 3)
@@ -225,7 +225,7 @@ int main()
                         }
                         case 2:
                         {
-                            std::cout << "Perimeter: " << shape->calculatePerimeter() << std::endl;
+                            std::cout << "Perimeter: " << shape->calculatePerimeter() << " cm" << std::endl;
                             break;
                         }
                         case 3:
