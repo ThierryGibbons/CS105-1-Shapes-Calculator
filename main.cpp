@@ -43,6 +43,7 @@ int main()
                 std::cout << "********************" << std::endl;
                 std::cout << "Square Calculator" << std::endl;
                 std::cout << "\n********************" << std::endl;
+                std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
                 //TODO: Display Square
 
@@ -96,6 +97,7 @@ int main()
                 std::cout << "********************" << std::endl;
                 std::cout << "Rectangle Calculator" << std::endl;
                 std::cout << "\n********************" << std::endl;
+                std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
                 //TODO: Display Rectangle
 
@@ -148,6 +150,7 @@ int main()
                 std::cout << "********************" << std::endl;
                 std::cout << "Triangle Calculator" << std::endl;
                 std::cout << "\n********************" << std::endl;
+                std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
                 //TODO: Display Triangle
 
@@ -200,6 +203,7 @@ int main()
                 std::cout << "********************" << std::endl;
                 std::cout << "Circle Calculator" << std::endl;
                 std::cout << "\n********************" << std::endl;
+                std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
                 //TODO: Display Circle
 
