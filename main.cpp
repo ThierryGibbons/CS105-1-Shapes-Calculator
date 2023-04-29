@@ -45,7 +45,7 @@ int main()
                 std::cout << "\n********************" << std::endl;
                 std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
-                //TODO: Display Square
+                shape->drawShape();
 
                 validChoice = false;
                 while (!validChoice)
@@ -58,7 +58,10 @@ int main()
 
                     if (choice >= 1 && choice <= 3)
                     {
-                        shape->getData('s');
+                        if (choice != 3)
+                        {
+                            shape->getData('s');
+                        }
                         validChoice = true;
                     }
                     else
@@ -99,7 +102,7 @@ int main()
                 std::cout << "\n********************" << std::endl;
                 std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
-                //TODO: Display Rectangle
+                shape->drawShape();
 
                 validChoice = false;
                 while (!validChoice)
@@ -112,7 +115,10 @@ int main()
 
                     if (choice >= 1 && choice <= 3)
                     {
-                        shape->getData('r');
+                        if (choice != 3)
+                        {
+                            shape->getData('r');
+                        }
                         validChoice = true;
                     }
                     else
@@ -152,7 +158,7 @@ int main()
                 std::cout << "\n********************" << std::endl;
                 std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
-                //TODO: Display Triangle
+                shape->drawShape();
 
                 validChoice = false;
                 while (!validChoice)
@@ -165,7 +171,10 @@ int main()
 
                     if (choice >= 1 && choice <= 3)
                     {
-                        shape->getData('t');
+                        if (choice != 3)
+                        {
+                            shape->getData('t');
+                        }
                         validChoice = true;
                     }
                     else
@@ -205,7 +214,7 @@ int main()
                 std::cout << "\n********************" << std::endl;
                 std::cout << "Total Area: " << Shapes::totalArea << "^2 cm" << std::endl;
 
-                //TODO: Display Circle
+                shape->drawShape();
 
                 validChoice = false;
                 while (!validChoice)
@@ -218,7 +227,10 @@ int main()
 
                     if (choice >= 1 && choice <= 3)
                     {
-                        shape->getData('c');
+                        if (choice != 3)
+                        {
+                            shape->getData('c');
+                        }
                         validChoice = true;
                     }
                     else

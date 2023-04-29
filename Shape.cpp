@@ -40,44 +40,86 @@ void Shapes::getData(char shape)
 /*
 Child Classes
 */
-double Square::calculateArea()
+double Square::calculateArea()  //  Square
 {
     return area = base * base;
 };
-
 double Square::calculatePerimeter()
 {
     return perimeter = 4 * base;
 };
+void Square::drawShape()
+{
+    int sizeX = 5;
+    for (int i = 0; i < sizeX; i++) {
+        for (int j = 0; j < sizeX; j++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+};
 
-double Rectangle::calculateArea()
+double Rectangle::calculateArea()   // Rectangle
 {
     return area = base * height;
 };
-
 double Rectangle::calculatePerimeter()
 {
     return perimeter = 2 * (base + height);
 };
+void Rectangle::drawShape()
+{
+    int sizeX = 15;
+    int sizeY = 5;
+    for (int i = 0; i < sizeY; i++) {
+        for (int j = 0; j < sizeX; j++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+};
 
-double Triangle::calculateArea()
+double Triangle::calculateArea()    // Triangle
 {
     return area = 0.5 * base * height;
 };
-
 double Triangle::calculatePerimeter()
 {
     return perimeter = base + height + sqrt(base * base + height * height);
 };
+void Triangle::drawShape()
+{
+    int sizeX = 5;
+    for (int i = 0; i < sizeX; i++) {
+        for (int j = 0; j <= i; j++) {
+            std::cout << "*";
+        }
+        std::cout << std::endl;
+    }
+};
 
-double Circle::calculateArea()
+double Circle::calculateArea()  // Circle
 {
     return area = 3.14 * base * base;
 };
-
 double Circle::calculatePerimeter()
 {
     return perimeter = 2 * 3.14 * base;
+};
+void Circle::drawShape()
+{
+    int sizeX = 5;
+
+    for (int i = -sizeX; i <= sizeX; i++) {
+        for (int j = -sizeX; j <= sizeX; j++) {
+            if (i*i + j*j <= sizeX*sizeX + 1) {
+                std::cout << "*";
+            } else {
+                std::cout << " ";
+            }
+        }
+        std::cout << std::endl;
+    }
 };
 
 

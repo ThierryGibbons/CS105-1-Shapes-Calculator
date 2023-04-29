@@ -14,6 +14,7 @@ public:
     void getData(char shape);
     virtual double calculateArea() = 0;
     virtual double calculatePerimeter() = 0;
+    virtual void drawShape() = 0;
     virtual ~Shapes() {}
     static double totalArea;
 };
@@ -26,6 +27,7 @@ class Square : public Shapes
 public:
     double calculateArea() override;
     double calculatePerimeter() override;
+    void drawShape() override;
 };
 
 class Rectangle : public Shapes
@@ -33,6 +35,7 @@ class Rectangle : public Shapes
 public:
     double calculateArea() override;
     double calculatePerimeter() override;
+    void drawShape() override;
 };
 
 class Triangle : public Shapes
@@ -40,6 +43,7 @@ class Triangle : public Shapes
 public:
     double calculateArea() override;
     double calculatePerimeter() override;
+    void drawShape() override;
 };
 
 class Circle : public Shapes
@@ -47,6 +51,7 @@ class Circle : public Shapes
 public:
     double calculateArea() override;
     double calculatePerimeter() override;
+    void drawShape() override;
 };
 
 #endif
